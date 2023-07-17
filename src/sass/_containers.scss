@@ -4,20 +4,32 @@
 
 body {
   background-color: colors.$secondary-color;
+  padding: 25px 0 25px 0;
 }
 
 .main-container {
-  width: 344px;
+  width: 343px;
   height: 612px;
   border-radius: 12px;
-  margin: 68px auto;
+  margin: 0 auto;
   overflow: hidden;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  &__parfum {
+    height: 100%;
+  }
 }
 
 .main-container__content {
   display: flex;
   flex-direction: column;
+  padding: 27px 26px 24px 25px;
+  gap: 10px;
+  height: 100%;
 
   &__product-type {
     font-size: 0.875rem;
@@ -25,25 +37,44 @@ body {
     font-family: fonts.$text-font;
     color: colors.$secondary-color-text;
     letter-spacing: 3px;
-    margin: 18px 24px 8px 24px;
     text-transform: uppercase;
+    margin: 0;
   }
 
   &__product-title {
     font-family: fonts.$heading-font;
-    margin: 0 24px 16px 24px;
     font-size: 2rem;
     font-weight: 700;
     color: colors.$heading-color;
     display: flex;
     justify-content: center;
+    line-height: 35px;
   }
 
   &__product-description {
     font-family: fonts.$text-font;
-    margin: 0 24px 44px 24px;
     line-height: 22px;
     font-size: 0.875rem;
     color: colors.$secondary-color-text;
+    margin: 0;
+    line-height: 23px;
+  }
+
+  &__price {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__price--value {
+    font-size: 1.1rem;
+    color: colors.$secondary-color-text;
+    text-decoration: line-through;
+  }
+
+  &__price--discount {
+    font-size: 2.5rem;
+    font-family: fonts.$heading-font;
+    color: colors.$primary-color;
   }
 }
