@@ -2,6 +2,10 @@
 @use "fonts";
 @use "colors";
 
+body {
+  background-color: colors.$secondary-color;
+}
+
 .main-container {
   width: 344px;
   height: 612px;
@@ -12,8 +16,11 @@
 }
 
 .main-container__content {
+  display: flex;
+  flex-direction: column;
+
   &__product-type {
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 400;
     font-family: fonts.$text-font;
     color: colors.$secondary-color-text;
@@ -33,6 +40,7 @@
   }
 
   &__product-description {
+    font-family: fonts.$text-font;
     margin: 0 24px 44px 24px;
     line-height: 22px;
     font-size: 0.875rem;
