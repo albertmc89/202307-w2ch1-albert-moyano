@@ -1,0 +1,12 @@
+@use "globals";
+@use "fonts";
+@use "colors";
+
+.main-container {
+  width: 344px;
+  height: 612px;
+  border-radius: 12px;
+  margin: 68px auto;
+  overflow: hidden;
+  background-color: colors.$secondary-color;
+}
