@@ -8,12 +8,12 @@
   border-radius: 12px;
   margin: 68px auto;
   overflow: hidden;
-  background-color: colors.$secondary-color;
+  background-color: #ffffff;
 }
 
 .main-container__content {
   &__product-type {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     font-family: fonts.$text-font;
     color: colors.$secondary-color-text;
@@ -25,10 +25,17 @@
   &__product-title {
     font-family: fonts.$heading-font;
     margin: 0 24px 16px 24px;
-    font-size: 2.2em;
+    font-size: 2rem;
     font-weight: 700;
     color: colors.$heading-color;
     display: flex;
     justify-content: center;
+  }
+
+  &__product-description {
+    margin: 0 24px 44px 24px;
+    line-height: 22px;
+    font-size: 0.875rem;
+    color: colors.$secondary-color-text;
   }
 }
